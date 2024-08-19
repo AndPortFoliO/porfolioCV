@@ -1,0 +1,37 @@
+
+
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: 
+    "   itme1       .       .       .             "
+    "   .       .       .       .             "
+    "   .       .       .       .             "
+    "   .       .       .       .             "
+    ;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.gridItem {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+#name1{
+    grid-area:itme1;
+
+}
+
+#name2{
+    grid-area:itme2;
+
+}
+#name3{
+    grid-area:itme3;
+
+}
